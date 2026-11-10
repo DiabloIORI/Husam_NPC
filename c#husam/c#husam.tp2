@@ -117,6 +117,7 @@ APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
       LAF HANDLE_CHARSETS
         INT_VAR
           infer_charsets = 1
+		  from_utf8 = 1
         STR_VAR
           tra_path = EVAL ~C#Husam/Translations/autotra~
           noconvert_array = c#noconvert
@@ -147,7 +148,7 @@ LANGUAGE ~English~
          ~C#Husam/Translations/english/game.tra~
 	 ~C#Husam/Translations/english/journal.tra~
 
-LANGUAGE ~Schinese~
+LANGUAGE ~Simplified Chinese~
          ~schinese~   
          ~C#Husam/Translations/schinese/setup.tra~
          ~C#Husam/Translations/schinese/game.tra~
