@@ -106,6 +106,7 @@ APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
     /* Copies tra files into the autotra-folder (to leave the originals untouched) */
     DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~C#Husam/Translations/english~  ~C#Husam/Translations/autotra/english~
       COPY ~C#Husam/Translations/english~  ~C#Husam/Translations/autotra/%LANGUAGE%~
       COPY ~C#Husam/Translations/%LANGUAGE%~  ~C#Husam/Translations/autotra/%LANGUAGE%~
     END
@@ -117,7 +118,6 @@ APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
       LAF HANDLE_CHARSETS
         INT_VAR
           infer_charsets = 1
-		  from_utf8 = 1
         STR_VAR
           tra_path = EVAL ~C#Husam/Translations/autotra~
           noconvert_array = c#noconvert
