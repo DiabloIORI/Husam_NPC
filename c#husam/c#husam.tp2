@@ -106,6 +106,7 @@ APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
     /* Copies tra files into the autotra-folder (to leave the originals untouched) */
     DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~C#Husam/Translations/english~  ~C#Husam/Translations/autotra/english~
       COPY ~C#Husam/Translations/english~  ~C#Husam/Translations/autotra/%LANGUAGE%~
       COPY ~C#Husam/Translations/%LANGUAGE%~  ~C#Husam/Translations/autotra/%LANGUAGE%~
     END
@@ -147,7 +148,7 @@ LANGUAGE ~English~
          ~C#Husam/Translations/english/game.tra~
 	 ~C#Husam/Translations/english/journal.tra~
 
-LANGUAGE ~Schinese~
+LANGUAGE ~Simplified Chinese~
          ~schinese~   
          ~C#Husam/Translations/schinese/setup.tra~
          ~C#Husam/Translations/schinese/game.tra~
